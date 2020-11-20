@@ -41,18 +41,30 @@ function App() {
       return () => clearInterval(interval);
   }, [query]);
 
-  if (selectedRestaurant === "cafe-berlin") {
+  if (window.location.pathname === "/3") {
     return (
       <div className="wrp">
-      <div className="page">
-        <h1>Restaurant profile Page</h1>
-
+        <div className="page">
+          <Header setQuery={setQuery} />
+          <div className="detail">
+            <h1>Restaurant profile Page</h1>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <div className="map">map</div>
+            <div className="clear"></div>
+            <h2>Comments</h2>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</li>
+              <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</li>
+              <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</li>
+            </ul>
+          </div>
+          <div className="contact">CTA</div>
         </div>
-    </div>
+      </div>
       );
   } 
-
-  if (query == "") {
+  console.log(window.location.pathname);
+  if (query === "") {
     return (
       <div className="wrp">
       <div className="page">
