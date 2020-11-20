@@ -36,3 +36,54 @@
     transform: rotate(360deg);
   }
 }
+
+.wrp {
+  position:relative;
+  max-width: 1600px;
+  margin: 0px auto;
+  min-height: 100%;
+  bottom: 100%;
+  background-color:#FFF;
+}
+
+.page {
+  /* Critical position and size styles */
+  min-height: 100%;
+  position: relative;
+  top: 0px;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  /* background: #F3F3F3 url('https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/252051bf4fce/assets/img/home/hero_photos/oYJx-YOK9dqe0F56bS2tDQ.jpg') repeat 0 0;  */
+  /* non-critical apperance styles */
+}
+
+.filter { 
+  float:left;
+  width: 10%;
+  background-color: #9CF;
+}
+
+.list {
+  float:left;
+  width: 40%%;
+  background-color: #f2f2f2;
+}
+
+.map {
+  float:left;
+  width: 50%;
+  background-color: #CFC;
+}
+
+header {
+  margin: 0 10px 20px 10px;
+  padding: 20px 10px;
+  background-color: #CCC;
+}
+
+.listBox {
+  margin: 10px;
+  padding: 10px;
+  border:solid #CCC 1px;
+}
